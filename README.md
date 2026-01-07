@@ -24,7 +24,7 @@ A responsive e-commerce website for premium luggage and travel sets, built with 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/Sinat1/suitcase-ecommerce.git
+   git clone https://github.com/Sinat1/luggio-suitcase-ecommerce.git
    cd <project-folder>
    ```
 

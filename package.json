@@ -1,10 +1,10 @@
 {
-  "name": "suitcase-ecommerce",
+  "name": "luggio-suitcase-ecommerce",
   "version": "1.0.0",
   "description": "Luggio suitcase website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sinat1/suitcase-ecommerce"
+    "url": "https://github.com/Sinat1/luggio-suitcase-ecommerce"
   },
   "license": "ISC",
   "author": "Vitalii Aleksandrov",
