@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Detailed product information including specifications, materials, customer reviews, pricing, and availability. Everything you need to make an informed purchase decision.">
+    <title>Cart</title>
+
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/main.css" />
+</head>
+
+<body class="page-loading">
+    <header></header>
+    <main>
+        <section class="product-details">
+            <div class="container">
+                <div class="product-details__wrapper">
+                    <div class="product-details__main-img-wrapper">
+                        <picture class="product-details__img" id="main-img">
+                            <source
+                                srcset="../assets/images/homepage/webp/npa-suitcase-1@1x.webp 1x, ../assets/images/homepage/webp/npa-suitcase-1@2x.webp 2x"
+                                type="image/webp">
+                            <source
+                                srcset="../assets/images/homepage/npa-suitcase-1@1x.jpg 1x, ../assets/images/homepage/npa-suitcase-1@2x.jpg 2x"
+                                type="image/jpeg">
+
+                            <img src="../assets/images/homepage/npa-suitcase-1@1x.jpg" alt="Suitcase placeholder"
+                                loading="lazy">
+                        </picture>
+                        <div class="product-details__thumbnails">
+                            <ul class="product-details__thumbnails-list">
+                                <li>
+                                    <picture class="product-details__thumbnails-img">
+                                        <source
+                                            srcset="../assets/images/product-details/webp/product-additional-1@1x.webp 1x, ../assets/images/product-details/webp/product-additional-1@2x.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="../assets/images/product-details/product-additional-1@1x.jpg 1x, ../assets/images/product-details/product-additional-1@2x.jpg 2x"
+                                            type="image/jpeg">
+
+                                        <img src="../assets/images/product-details/product-additional-1@1x.jpg"
+                                            alt="Suitcase additional mini 1" loading="lazy">
+                                    </picture>
+                                </li>
+                                <li>
+                                    <picture class="product-details__thumbnails-img">
+                                        <source
+                                            srcset="../assets/images/product-details/webp/product-additional-2@1x.webp 1x, ../assets/images/product-details/webp/product-additional-2@2x.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="../assets/images/product-details/product-additional-2@1x.jpg 1x, ../assets/images/product-details/product-additional-2@2x.jpg 2x"
+                                            type="image/jpeg">
+
+                                        <img src="../assets/images/product-details/product-additional-2@1x.jpg"
+                                            alt="Suitcase additional mini 2" loading="lazy">
+                                    </picture>
+                                </li>
+                                <li>
+                                    <picture class="product-details__thumbnails-img">
+                                        <source
+                                            srcset="../assets/images/product-details/webp/product-additional-3@1x.webp 1x, ../assets/images/product-details/webp/product-additional-3@2x.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="../assets/images/product-details/product-additional-3@1x.jpg 1x, ../assets/images/product-details/product-additional-3@2x.jpg 2x"
+                                            type="image/jpeg">
+
+                                        <img src="../assets/images/product-details/product-additional-3@1x.jpg"
+                                            alt="Suitcase additional mini 3" loading="lazy">
+                                    </picture>
+                                </li>
+                                <li>
+                                    <picture class="product-details__thumbnails-img">
+                                        <source
+                                            srcset="../assets/images/product-details/webp/product-additional-4@1x.webp 1x, ../assets/images/product-details/webp/product-additional-4@2x.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="../assets/images/product-details/product-additional-4@1x.jpg 1x, ../assets/images/product-details/product-additional-4@2x.jpg 2x"
+                                            type="image/jpeg">
+
+                                        <img src="../assets/images/product-details/product-additional-4@1x.jpg"
+                                            alt="Suitcase additional mini 4" loading="lazy">
+                                    </picture>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-details__info">
+                        <h1 class="product-details__title" id="product-title">Explorer Pro Durable Suitcase</h1>
+                        <div class="product-details__rating" id="product-rating">
+                            <svg class="product-details__rating-icon">
+                                <use class="star-1" href="../assets/images/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="product-details__rating-icon">
+                                <use class="star-2" href="../assets/images/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="product-details__rating-icon">
+                                <use class="star-3" href="../assets/images/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="product-details__rating-icon">
+                                <use class="star-4" href="../assets/images/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="product-details__rating-icon">
+                                <use class="star-5" href="../assets/images/sprite.svg#icon-empty-star"></use>
+                            </svg>
+                            <span class="product-details__rating-review">(1 Clients Review)</span>
+                        </div>
+                        <p class="product-details__price" id="product-price">$250</p>
+
+                        <div class="product-details__description" id="product-description">
+                            <p class="product-details__description-text">The new Global Explorer Max Comfort Suitcase
+                                Pro is a bold reimagining of
+                                travel essentials, designed to elevate every journey. Made with at least 30%
+                                recycled materials, its lightweight yet impact-resistant shell combines eco-
+                                conscious innovation with rugged durability.</p>
+
+                            <p class="product-details__description-text">The ergonomic handle and GlideMotion spinner
+                                wheels ensure effortless
+                                mobility while making a statement in sleek design. Inside, the modular
+                                compartments and adjustable straps keep your belongings secure and
+                                neatly organized, no matter the destination.</p>
+                        </div>
+
+                        <div class="product-details__options">
+                            <div class="product-details__option">
+                                <label class="product-details__label" for="size-select">Size</label>
+                                <svg class="product-details__options-icon">
+                                    <use href="../assets/images/sprite.svg#icon-dropdown-menu-arrow"></use>
+                                </svg>
+                                <select id="size-select" class="product-details__select">
+                                    <option value="">Choose option</option>
+                                </select>
+                            </div>
+                            <div class="product-details__option">
+                                <label class="product-details__label" for="color-select">Color</label>
+                                <svg class="product-details__options-icon">
+                                    <use href="../assets/images/sprite.svg#icon-dropdown-menu-arrow"></use>
+                                </svg>
+                                <select id="color-select" class="product-details__select">
+                                    <option value="">Choose option</option>
+                                </select>
+                            </div>
+                            <div class="product-details__option">
+                                <label class="product-details__label" for="category-select">Category</label>
+                                <svg class="product-details__options-icon">
+                                    <use href="../assets/images/sprite.svg#icon-dropdown-menu-arrow"></use>
+                                </svg>
+                                <select id="category-select" class="product-details__select">
+                                    <option value="">Choose option </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="product-details__quantity">
+                            <div class="quantity-controls product-details__quantity-controls">
+                                <button class="quantity-controls__btn" type="button" id="qty-minus">-</button>
+                                <span class="quantity-controls__span" id="qty-span">1</span>
+                                <button class="quantity-controls__btn" type="button" id="qty-plus">+</button>
+                            </div>
+                            <button class="homepage-btn product-details__add-to-cart" id="add-to-cart">Add To
+                                Cart</button>
+                        </div>
+
+                        <div class="product-details__payment">
+                            <h3 class="product-details__payment-title">Payment:</h3>
+                            <ul class="product-details__payment-list">
+                                <li class="product-details__payment-item">
+                                    <picture class="product-details__payment-img">
+                                        <source
+                                            srcset="../assets/images/product-details/webp/visa@1x.webp 1x, ../assets/images/product-details/webp/visa@2x.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="../assets/images/product-details/visa@1x.png 1x, ../assets/images/product-details/visa@2x.png 2x"
+                                            type="image/png">
+
+                                        <img src="../assets/images/product-details/visa@1x.png" alt="Visa"
+                                            loading="lazy">
+                                    </picture>
+                                </li>
+                                <li class="product-details__payment-item">
+                                    <picture class="product-details__payment-img">
+                                        <source
+                                            srcset="../assets/images/product-details/webp/american-express@1x.webp 1x, ../assets/images/product-details/webp/american-express@2x.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="../assets/images/product-details/american-express@1x.png 1x, ../assets/images/product-details/american-express@2x.png 2x"
+                                            type="image/png">
+
+                                        <img src="../assets/images/product-details/american-express@1x.png"
+                                            alt="American Express" loading="lazy">
+                                    </picture>
+                                </li>
+                                <li class="product-details__payment-item">
+                                    <picture class="product-details__payment-img">
+                                        <source
+                                            srcset="../assets/images/product-details/webp/mastercard@1x.webp 1x, ../assets/images/product-details/webp/mastercard@2x.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="../assets/images/product-details/mastercard@1x.png 1x, ../assets/images/product-details/mastercard@2x.png 2x"
+                                            type="image/png">
+
+                                        <img src="../assets/images/product-details/mastercard@1x.png" alt="Mastercard"
+                                            loading="lazy">
+                                    </picture>
+                                </li>
+                                <li class="product-details__payment-item">
+                                    <picture class="product-details__payment-img">
+                                        <source
+                                            srcset="../assets/images/product-details/webp/paypal@1x.webp 1x, ../assets/images/product-details/webp/paypal@2x.webp 2x"
+                                            type="image/webp">
+                                        <source
+                                            srcset="../assets/images/product-details/paypal@1x.png 1x, ../assets/images/product-details/paypal@2x.png 2x"
+                                            type="image/png">
+
+                                        <img src="../assets/images/product-details/paypal@1x.png" alt="PayPal"
+                                            loading="lazy">
+                                    </picture>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-tabs">
+                    <ul class="product-tabs__nav">
+                        <li class="product-tabs__nav-item">
+                            <button class="product-tabs__tab active-tab" data-tab="details">Details</button>
+                        </li>
+                        <li class="product-tabs__nav-item">
+                            <button class="product-tabs__tab" data-tab="reviews">Reviews</button>
+                        </li>
+                        <li class="product-tabs__nav-item">
+                            <button class="product-tabs__tab" data-tab="shipping">Shipping Policy</button>
+                        </li>
+                    </ul>
+                    <div class="product-tabs__content">
+                        <div class="product-tabs__pane" id="details-pane">
+                            <p class="product-tabs__text" id="details-content">
+                                Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta
+                                risus id neque tempor, in
+                                efficitur justo imperdiet. Etiam a ex at
+                                ante tincidunt imperdiet. Nunc congue ex vel nisl viverra, sit amet aliquet lectus
+                                ullamcorper. Praesent luctus lacus
+                                non lorem elementum, eu tristique
+                                sapien suscipit. Sed bibendum, ipsum nec viverra malesuada, erat nisi sodales purus,
+                                eget hendrerit dui ligula eu enim.
+                                Ut non est nisi. Pellentesque
+                                tristique pretium dolor eu commodo. Proin iaculis nibh vitae lectus mollis bibendum.
+                                Quisque varius eget urna sit amet
+                                luctus. Suspendisse potenti.
+                                Curabitur ac placerat est, sit amet sodales risus. Pellentesque viverra dui auctor,
+                                ullamcorper turpis pharetra,
+                                facilisis quam.
+                                <br>
+                                <br>
+                                Proin iaculis nibh vitae lectus mollis bibendum. Quisque varius eget urna sit amet
+                                luctus. Suspendisse potenti.
+                                Curabitur ac placerat est, sit amet sodales
+                                risus. Pellentesque viverra dui auctor, ullamcorper turpis pharetra, facilisis quam.
+                                Proin iaculis nibh vitae lectus
+                                mollis bibendum.
+                                <br>
+                                <br>
+                                Quisque varius eget urna sit amet luctus. Suspendisse potenti. Curabitur ac placerat
+                                est, sit amet sodales risus.
+                                Pellentesque viverra dui auctor,
+                                ullamcorper turpis pharetra, facilisis quam.
+                            </p>
+                        </div>
+                        <div class="product-tabs__pane" id="reviews-pane" style="display: none;">
+                            <div class="reviews-wrapper">
+                                <div class="reviewer__wrapper">
+                                    <h3 class="reviews-amount__title">1 review for Global Explorer Max Comfort Suitcase
+                                        Pro
+                                    </h3>
+                                    <div class="reviewer__block">
+                                        <picture class="reviewer__img">
+                                            <source
+                                                srcset="../assets/images/product-details/webp/reviews-portrait@1x.webp 1x, ../assets/images/product-details/webp/reviews-portrait@2x.webp 2x"
+                                                type="image/webp">
+                                            <source
+                                                srcset="../assets/images/product-details/reviews-portrait@1x.png 1x, ../assets/images/product-details/reviews-portrait@2x.png 2x"
+                                                type="image/png">
+
+                                            <img src="../assets/images/product-details/reviews-portrait@1x.png"
+                                                alt="Profile avatar" loading="lazy">
+                                        </picture>
+                                        <div>
+                                            <div class="reviewer__info">
+                                                <div>
+                                                    <p class="reviewer__name">
+                                                        Ella Harper
+                                                        <span class="reviewer__date">/ June 11, 2025</span>
+                                                    </p>
+                                                </div>
+                                                <span id="product-rating">
+                                                    <svg class="product-details__rating-icon">
+                                                        <use class="star-1"
+                                                            href="../assets/images/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product-details__rating-icon">
+                                                        <use class="star-2"
+                                                            href="../assets/images/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product-details__rating-icon">
+                                                        <use class="star-3"
+                                                            href="../assets/images/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product-details__rating-icon">
+                                                        <use class="star-4"
+                                                            href="../assets/images/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product-details__rating-icon">
+                                                        <use class="star-5"
+                                                            href="../assets/images/sprite.svg#icon-empty-star"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <p class="reviewer__comment">
+                                                Proin iaculis nibh vitae lectus mollis bibendum. Quisque
+                                                varius eget urna sit amet luctus. Suspendisse potenti
+                                                curabitur ac placerat est, sit amet sodales risus.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="add-review__wrapper">
+                                    <h3 class="add-review__title">Add Review</h3>
+                                    <p class="add-review__subtitle">Your email address won’t be shared with anybody.
+                                        Required fields have the symbol
+                                        <span class="required-star">*</span>
+                                    </p>
+                                    <p class="rate-product">RATE PRODUCT
+                                        <span class="rating__stars" id="rating-stars">
+                                            <svg class="rating__stars-icon" data-index="1">
+                                                <use href="../assets/images/sprite.svg#icon-bordered-star"></use>
+                                            </svg>
+                                            <svg class="rating__stars-icon" data-index="2">
+                                                <use href="../assets/images/sprite.svg#icon-bordered-star"></use>
+                                            </svg>
+                                            <svg class="rating__stars-icon" data-index="3">
+                                                <use href="../assets/images/sprite.svg#icon-bordered-star"></use>
+                                            </svg>
+                                            <svg class="rating__stars-icon" data-index="4">
+                                                <use href="../assets/images/sprite.svg#icon-bordered-star"></use>
+                                            </svg>
+                                            <svg class="rating__stars-icon" data-index="5">
+                                                <use href="../assets/images/sprite.svg#icon-bordered-star"></use>
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <form id="review-form">
+                                        <div class="form-group__review-group form-group__review-group--textarea">
+                                            <label class="form-group__review-group-label" for="review-text"></label>
+                                            <textarea class="form-group__review-group-textarea" id="review-text"
+                                                required placeholder="Your Review*"></textarea>
+                                        </div>
+
+                                        <div class="form-group__review-group-wrapper">
+                                            <div class="form-group__review-group">
+                                                <label class="form-group__review-group-label visually-hidden"
+                                                    for="review-name">
+                                                    Your Name
+                                                </label>
+                                                <input class="form-group__review-group-field" type="text"
+                                                    id="review-name" required placeholder="Your Name*">
+                                            </div>
+                                            <div class="form-group__review-group">
+                                                <label class="form-group__review-group-label visually-hidden"
+                                                    for="review-email">
+                                                    Your Email
+                                                </label>
+                                                <input class="form-group__review-group-field" type="email"
+                                                    id="review-email" required placeholder="Your Email*">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label class="form-group__review-group-checkbox-label">
+                                                <input class="form-group__review-group-checkbox" name="save"
+                                                    type="checkbox">
+                                                <span class="form-group__review-group-checkbox">Save my name, email, and
+                                                    website in this browser for when I leave
+                                                    another comment.</span>
+                                            </label>
+                                        </div>
+                                        <button type="submit"
+                                            class="homepage-btn form-group__review-group-btn">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="product-tabs__pane" id="shipping-pane" style="display: none;">
+                            <p class="product-tabs__text" id="shipping-content">
+                                Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta
+                                risus id neque tempor, in
+                                efficitur justo imperdiet. Etiam a ex at
+                                ante tincidunt imperdiet. Nunc congue ex vel nisl viverra, sit amet aliquet lectus
+                                ullamcorper. Praesent luctus lacus
+                                non lorem elementum, eu tristique
+                                sapien suscipit. Sed bibendum, ipsum nec viverra malesuada, erat nisi sodales purus,
+                                eget hendrerit dui ligula eu enim.
+                                Ut non est nisi. Pellentesque
+                                tristique pretium dolor eu commodo. Proin iaculis nibh vitae lectus mollis bibendum.
+                                Quisque varius eget urna sit amet
+                                luctus. Suspendisse potenti.
+                                Curabitur ac placerat est, sit amet sodales risus. Pellentesque viverra dui auctor,
+                                ullamcorper turpis pharetra,
+                                facilisis quam.
+                                <br>
+                                <br>
+                                Proin iaculis nibh vitae lectus mollis bibendum. Quisque varius eget urna sit amet
+                                luctus. Suspendisse potenti.
+                                Curabitur ac placerat est, sit amet sodales
+                                risus. Pellentesque viverra dui auctor, ullamcorper turpis pharetra, facilisis quam.
+                                Proin iaculis nibh vitae lectus
+                                mollis bibendum.
+                                <br>
+                                <br>
+                                Quisque varius eget urna sit amet luctus. Suspendisse potenti. Curabitur ac placerat
+                                est, sit amet sodales risus.
+                                Pellentesque viverra dui auctor,
+                                ullamcorper turpis pharetra, facilisis quam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="you-may-also-like">
+            <div class="container you-may-also-like__wrapper">
+                <h2 class="you-may-also-like__title">You May Also Like</h2>
+                <ul class="you-may-also-like__list">
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <div class="modal-backdrop is-hidden" data-modal>
+        <div class="modal">
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group form-group--modal">
+                    <label for="login-email" class="form-label form-label--modal">Email address <span
+                            class="required-star">*</span></label>
+                    <input type="email" id="login-email" name="email" class="form-input form-input--modal" required
+                        pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+                        title="Please enter a valid email address (e.g., yourname@example.com)">
+                </div>
+
+                <div class="form-group form-group--modal">
+                    <label for="login-password" class="form-label form-label--modal">Password <span
+                            class="required-star">*</span></label>
+                    <div class="password-wrapper">
+                        <input type="password" id="login-password" name="password" class="form-input form-input--modal"
+                            required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number.">
+                        <button type="button" class="password-toggle-btn" data-password-toggle>
+                            <svg class="eye-icon">
+                                <use href="/assets/images/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember" class="checkbox-input">
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password-link">Forgot Your Password?</a>
+                </div>
+
+                <button type="submit" class="homepage-btn login-submit-btn">LOG IN</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="../js/layout.js" type="module"></script>
+    <script src="../js/cart.js" type="module"></script>
+    <script src="../js/product.js" type="module"></script>
+</body>
+
+</html>

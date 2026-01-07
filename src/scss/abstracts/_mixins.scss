@@ -1,0 +1,40 @@
+// Переменные для удобства
+$breakpoint-desktop-min: 1440px;
+$breakpoint-small-laptop-max: 1439.9px;
+$breakpoint-small-laptop-min: 1024px;
+$breakpoint-tablet-max: 1023.9px;
+$breakpoint-tablet-min: 768px;
+$breakpoint-mobile-max: 767.9px;
+
+// --- Миксины ---
+
+// 1. Wide desktops ( => 1440px )
+@mixin desktop-plus {
+  @media screen and (min-width: $breakpoint-desktop-min) {
+    @content;
+  }
+}
+
+// 2. Small Laptops (1024px — 1439.9px)
+@mixin tablet-to-desktop {
+  @media screen and (min-width: $breakpoint-small-laptop-min) and (max-width: $breakpoint-small-laptop-max) {
+    @content;
+  }
+}
+
+// 3. Tablets (768px — 1023.9px)
+@mixin tablet-only {
+  @media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-mobile-max) {
+    @content;
+  }
+}
+
+// 4. Mobile ( <= 767.9px)
+@mixin mobile {
+  @media screen and (max-width: $breakpoint-mobile-max) {
+    @content;
+  }
+}
+
+// How to use
+// @include e.g tablet-only

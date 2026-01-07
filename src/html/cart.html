@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Review the items in your cart, update quantities, and proceed to checkout quickly and easily.">
+    <title>Cart</title>
+
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/main.css" />
+</head>
+
+<body class="page-loading">
+    <header></header>
+    <main>
+        <section class="cart-hero">
+            <h1 class="cart-hero__title">My Cart</h1>
+        </section>
+        <section class="cart-table__block">
+            <div class="container">
+
+                <div id="cart-empty-message"
+                    style="display: none; text-align: center; font-size: 20px; margin: 40px 0;">
+                    Your cart is empty. Use the catalog to add new items.
+                </div>
+
+
+                <table class="cart-table">
+                    <thead class="cart-table__head">
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <div class="cart-summary__wrapper">
+                    <ul class="cart-actions__list">
+                        <li class="cart-actions__item">
+                            <button class="homepage-btn homepage-btn--cart" id="continue-shopping">Continue
+                                Shopping</button>
+                        </li>
+                        <li class="cart-actions__item">
+                            <button class="homepage-btn homepage-btn--cart" id="clear-cart">Clear Shopping Cart</button>
+                        </li>
+                    </ul>
+
+                    <div class="cart-summary" id="cart-summary">
+                        <div class="cart-summary__row">
+                            <span>Sub Total</span>
+                            <span id="sub-total">$0.00</span>
+                        </div>
+                        <div class="cart-summary__row">
+                            <span>Discount</span>
+                            <span id="discount">$0.00</span>
+                        </div>
+                        <div class="cart-summary__row">
+                            <span>Shipping</span>
+                            <span>$30.00</span>
+                        </div>
+                        <div class="cart-summary__row cart-summary__row--total">
+                            <span>Total</span>
+                            <span id="total">$30.00</span>
+                        </div>
+                        <button class="homepage-btn checkout-btn" id="checkout">CHECKOUT</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <div class="modal-backdrop is-hidden" data-modal>
+        <div class="modal">
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group form-group--modal">
+                    <label for="login-email" class="form-label form-label--modal">Email address <span
+                            class="required-star">*</span></label>
+                    <input type="email" id="login-email" name="email" class="form-input form-input--modal" required
+                        pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+                        title="Please enter a valid email address (e.g., yourname@example.com)">
+                </div>
+
+                <div class="form-group form-group--modal">
+                    <label for="login-password" class="form-label form-label--modal">Password <span
+                            class="required-star">*</span></label>
+                    <div class="password-wrapper">
+                        <input type="password" id="login-password" name="password" class="form-input form-input--modal"
+                            required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number.">
+                        <button type="button" class="password-toggle-btn" data-password-toggle>
+                            <svg class="eye-icon">
+                                <use href="/assets/images/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember" class="checkbox-input">
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password-link">Forgot Your Password?</a>
+                </div>
+
+                <button type="submit" class="homepage-btn login-submit-btn">LOG IN</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="../js/layout.js" type="module"></script>
+    <script src="../js/cart.js" type="module"></script>
+</body>
+
+</html>

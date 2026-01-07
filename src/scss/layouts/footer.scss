@@ -1,0 +1,340 @@
+@use "../abstracts/variables" as *;
+@use "../base/fonts" as *;
+
+footer {
+  font-family: var(--font-alt);
+}
+
+.footer__background {
+  margin-bottom: 120px;
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: image-set(
+    url("../../assets/images/footer/webp/footer-bg@1x.webp") type("image/webp")
+      1x,
+    url("../../assets/images/footer/webp/footer-bg@2x.webp") type("image/webp")
+      2x,
+    url("../../assets/images/footer/footer-bg@1x.png") type("image/png") 1x,
+    url("../../assets/images/footer/footer-bg@2x.png") type("image/png") 2x
+  );
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__benefits-title {
+  margin-bottom: 32px;
+  font-family: var(--font-minor);
+  color: $white-color;
+  font-size: 19px;
+
+  @media screen and (width <= 767.9px) {
+    text-align: center;
+  }
+}
+
+.footer__benefits-list {
+  display: flex;
+  font-family: var(--font-alt);
+  color: $white-color;
+  font-size: 15px;
+  gap: 90px;
+
+  @media screen and (width >= 1024px) and (width <= 1439.9px) {
+    gap: 60px;
+    font-size: 14px;
+  }
+
+  @media screen and (width >= 768px) and (width <= 1023.9px) {
+    font-size: 14px;
+    gap: 30px;
+  }
+
+  @media screen and (width <= 767.9px) {
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.footer__benefits-item {
+  display: flex;
+  align-items: center;
+
+  @media screen and (width <= 767.9px) {
+    flex-direction: column;
+    flex: 0 0 calc(50% - 25px / 2);
+  }
+}
+
+.footer__benefits-img {
+  margin-right: 20px;
+  flex-shrink: 0;
+
+  img {
+    width: 60px;
+    height: 60px;
+
+    @media screen and (width >= 1024px) and (width <= 1439.9px) {
+      width: 50px;
+      height: 50px;
+    }
+
+    @media screen and (width >= 768px) and (width <= 1023.9px) {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  @media screen and (width <= 767.9px) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.footer__benefits-text {
+  @media screen and (width <= 767.9px) {
+    text-align: center;
+  }
+}
+
+////////////////////////////
+
+.footer__main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+
+  @media screen and (width >= 1024px) and (width <= 1439.9px) {
+    gap: 40px;
+    margin-bottom: 90px;
+  }
+
+  @media screen and (width >= 768px) and (width <= 1023.9px) {
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 80px;
+  }
+
+  @media screen and (width <= 767.9px) {
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 70px;
+  }
+}
+
+.footer__main-content {
+  @media screen and (width <= 1023.9px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__lists-wrapper {
+  display: flex;
+  gap: 140px;
+  margin-bottom: 50px;
+
+  @media screen and (width >= 1024px) and (width <= 1439.9px) {
+    gap: 60px;
+  }
+
+  @media screen and (width >= 768px) and (width <= 1023.9px) {
+    gap: 100px;
+  }
+
+  @media screen and (width <= 767.9px) {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.footer__lists-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: var(--font-minor);
+
+  @media screen and (width <= 767.9px) {
+    margin-bottom: 18px;
+  }
+}
+
+.footer__lists-link {
+  color: $main-text-color;
+}
+
+.footer__lists-item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__shipping-info-block {
+  @media screen and (width >= 768px) and (width <= 1023.9px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (width <= 767.9px) {
+    text-align: center;
+  }
+}
+
+.footer__shipping-info-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: var(--font-minor);
+}
+
+.footer__shipping-info-text {
+  max-width: 640px;
+  font-size: 15px;
+  line-height: 1.5;
+
+  @media screen and (width >= 1024px) and (width <= 1439.9px) {
+    max-width: 550px;
+  }
+
+  @media screen and (width >= 768px) and (width <= 1023.9px) {
+    max-width: 100%;
+  }
+
+  @media screen and (width <= 767.9px) {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+
+.footer__contact-info {
+  @media screen and (width <= 1023.9px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (width <= 767.9px) {
+    text-align: center;
+  }
+}
+
+.footer__contact-info-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: var(--font-minor);
+}
+
+.footer__contact-info-link {
+  color: $main-text-color;
+}
+
+.footer__contact-info-text {
+  max-width: 368px;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 75px;
+
+  @media screen and (width >= 768px) and (width <= 1023.9px) {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (width <= 767.9px) {
+    max-width: 100%;
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+}
+
+.footer__contact-row {
+  display: flex;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (width >= 768px) and (width <= 1023.9px) {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  @media screen and (width <= 767.9px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: center;
+  margin-right: 23px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (width <= 767.9px) {
+    margin-right: 0;
+  }
+}
+
+.footer__contact-link {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: $main-text-color;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.footer__contact-icon {
+  margin-right: 14px;
+  width: 24px;
+  height: 24px;
+
+  &:last-child {
+    margin-top: 2.5px;
+    margin-left: 5px;
+  }
+
+  @media screen and (width <= 767.9px) {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-top: 2.5px;
+      margin-left: 0;
+    }
+  }
+}
+
+.footer__hours {
+  line-height: 1.5;
+}
+
+////////////////////////
+.copyright {
+  font-family: var(--font-minor);
+  color: rgb(0 0 0 / 35%);
+  text-align: center;
+  margin-bottom: 45px;
+
+  @media screen and (width <= 767.9px) {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+}

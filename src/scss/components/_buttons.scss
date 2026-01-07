@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+@use "../base/fonts" as *;
+
+.homepage-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 60px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 18px;
+  color: $white-color;
+  background-color: $theme-color;
+  padding: 18px;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (width >= 1024px) {
+    transition: transform $timing-function;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  @media screen and (width >= 768px) and (width <= 1023.9px) {
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Browse our full collection of suitcases, carry-ons, and luggage sets. Filter by category, color, size, or sale status to find your perfect travel companion.">
+    <title>Catalog</title>
+
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/main.css" />
+</head>
+
+<body class="page-loading">
+    <header></header>
+    <main>
+        <section>
+            <div class="container">
+
+                <section class="filters-dropdown">
+                    <div class="container">
+                        <div class="filters-dropdown__trigger">
+                            <span class="filters-dropdown__label">Filters</span>
+                            <svg class="filters-dropdown__icon">
+                                <use href="../assets/images/sprite.svg#icon-dropdown-menu-arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="filters-dropdown__content is-hidden">
+                            <div class="filters-dropdown__wrapper">
+                                <div class="filters-dropdown__item">
+                                    <label class="filters-dropdown__label" for="filter-size">Size</label>
+                                    <select id="filter-size" class="filters-dropdown__select">
+                                        <option value="">Choose option</option>
+                                    </select>
+                                </div>
+                                <div class="filters-dropdown__item">
+                                    <label class="filters-dropdown__label" for="filter-color">Color</label>
+                                    <select id="filter-color" class="filters-dropdown__select">
+                                        <option value="">Choose option</option>
+                                    </select>
+                                </div>
+                                <div class="filters-dropdown__item">
+                                    <label class="filters-dropdown__label" for="filter-category">Category</label>
+                                    <select id="filter-category" class="filters-dropdown__select">
+                                        <option value="">Choose option</option>
+                                    </select>
+                                </div>
+                                <div class="filters-dropdown__item">
+                                    <label class="filters-dropdown__label" for="filter-sales">Sales</label>
+                                    <div class="filters-dropdown__toggle">
+                                        <input type="checkbox" id="filter-sales" class="filters-dropdown__toggle-input">
+                                        <span class="filters-dropdown__toggle-span"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filters-dropdown__actions">
+                                <button class="homepage-btn filters-dropdown__btn" id="clear-filters">CLEAR
+                                    FILTERS</button>
+                                <button class="homepage-btn filters-dropdown__btn" id="hide-filters">HIDE
+                                    FILTERS</button>
+                            </div>
+                        </div>
+
+                </section>
+
+
+                <div class="catalog-layout">
+                    <div class="catalog-main-content">
+                        <section class="catalog-controls">
+                            <div class="catalog-controls__results" id="results-info">Showing 1–12 of 15 Results</div>
+                            <div class="catalog-controls__sort">
+                                <label for="sort-select" class="visually-hidden">Sort by:</label>
+                                <select id="sort-select" class="catalog-controls__select">
+                                    <option value="default">Default Sorting</option>
+                                    <option value="price-low-high">Price: Low to High</option>
+                                    <option value="price-high-low">Price: High to Low</option>
+                                    <option value="popularity">Popularity</option>
+                                    <option value="rating">Rating</option>
+                                </select>
+                            </div>
+                            <div class="catalog-controls__search-mobile">
+                                <input type="text" id="search-input-mobile" placeholder="Search Models"
+                                    class="catalog-controls__search-input">
+                                <button type="button" id="search-btn-mobile" class="catalog-controls__search-btn">
+                                    <svg class="catalog-controls__search-icon">
+                                        <use href="../assets/images/sprite.svg#icon-search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </section>
+
+                        <section class="catalog-products">
+                            <ul class="catalog-products__list" id="products-list">
+                            </ul>
+                            <div class="pagination" id="pagination">
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="catalog-sidebar">
+                        <div class="catalog-sidebar__search">
+                            <input type="text" id="search-input" placeholder="Search Models"
+                                class="catalog-sidebar__search-input">
+                            <button type="button" id="search-btn" class="catalog-sidebar__search-btn">
+                                <svg class="catalog-sidebar__search-icon">
+                                    <use href="../assets/images/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <h2 class="top-best-sets__title">Top Best Sets</h2>
+                        <ul class="top-best-sets__list" id="best-sets-list">
+                        </ul>
+                    </aside>
+                </div>
+                <div class="catalog-top-best-sets-mobile"></div>
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+
+    <div class="modal-backdrop is-hidden" id="not-found-modal">
+        <div class="modal">
+            <p class="modal-message">Product not found.</p>
+            <button class="homepage-btn modal-close-btn" id="close-not-found">OK</button>
+        </div>
+    </div>
+
+    <div class="modal-backdrop is-hidden" data-modal>
+        <div class="modal">
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group form-group--modal">
+                    <label for="login-email" class="form-label form-label--modal">Email address <span
+                            class="required-star">*</span></label>
+                    <input type="email" id="login-email" name="email" class="form-input form-input--modal" required
+                        pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+                        title="Please enter a valid email address (e.g., yourname@example.com)">
+                </div>
+
+                <div class="form-group form-group--modal">
+                    <label for="login-password" class="form-label form-label--modal">Password <span
+                            class="required-star">*</span></label>
+                    <div class="password-wrapper">
+                        <input type="password" id="login-password" name="password" class="form-input form-input--modal"
+                            required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number.">
+                        <button type="button" class="password-toggle-btn" data-password-toggle>
+                            <svg class="eye-icon">
+                                <use href="/assets/images/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember" class="checkbox-input">
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password-link">Forgot Your Password?</a>
+                </div>
+
+                <button type="submit" class="homepage-btn login-submit-btn">LOG IN</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="../js/layout.js" type="module"></script>
+    <script src="../js/cart.js" type="module"></script>
+    <script src="../js/catalog.js" type="module"></script>
+</body>
+
+</html>

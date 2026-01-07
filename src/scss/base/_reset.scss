@@ -1,0 +1,76 @@
+@use "../abstracts/variables" as *;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: $white-color;
+}
+
+body.no-scroll {
+  overflow-y: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+// SMOOTH PAGE DISPLAYING//
+.page-loading main {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+}
+
+body:not(.page-loading) main,
+body:not(.page-loading) .page-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/////////////////////////
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "suitcase-ecommerce",
+  "version": "1.0.0",
+  "description": "Luggio suitcase website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sinat1/suitcase-ecommerce"
+  },
+  "license": "ISC",
+  "author": "Vitalii Aleksandrov",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass src/scss:src/dist/css --no-source-map",
+    "build": "npm run compile",
+    "dev": "npm run compile && concurrently \"npx sass --watch src/scss:src/dist/css --no-source-map\" \"npx live-server src --port=5500\"",
+    "lint": "eslint src/js/**/*.js && stylelint \"src/scss/**/*.scss\"",
+    "lint:fix": "eslint src/js/**/*.js --fix && stylelint \"src/scss/**/*.scss\" --fix"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.39.1",
+    "concurrently": "^8.2.2",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.93.3",
+    "stylelint": "^16.26.0",
+    "stylelint-config-standard-scss": "^16.0.0"
+  }
+}

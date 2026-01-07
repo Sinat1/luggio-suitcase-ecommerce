@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Reach out to us for any questions or assistance. Our team is available by phone, email, and through our contact form.">
+    <title>Contact Us</title>
+
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/main.css" />
+</head>
+
+<body class="page-loading">
+    <header></header>
+    <main>
+        <section class="contact-hero">
+            <h1 class="contact-hero__title">Contact Us</h1>
+            <p class="contact-hero__text">Duis vestibulum elit vel neque pharetra vulputate.
+                Duis rutrum non risus in imperdiet.</p>
+        </section>
+        <section class="contact-info">
+            <div class="container">
+                <ul class="contact-info__list">
+                    <li class="contact-info__item">
+                        <svg class="contact-info__icon">
+                            <use href="../assets/images/sprite.svg#icon-location"></use>
+                        </svg>
+                        <h3 class="contact-info__title">Our Location</h3>
+                        <a href="https://maps.google.com/?q=1234+NW+Bobcat+Lane,+" class="contact-info__link"
+                            target="_blank">1234 NW
+                            Bobcat Lane, St. <br>
+                            Robert, MO 65584-5678
+                        </a>
+                    </li>
+                    <li class="contact-info__item">
+                        <svg class="contact-info__icon">
+                            <use href="../assets/images/sprite.svg#icon-clock"></use>
+                        </svg>
+                        <h3 class="contact-info__title">Operating Time</h3>
+                        <div class="contact-info__text">Monday - Friday: 9am - 6pm <br>
+                            Weekends: 10:30am - 6pm</div>
+                    </li>
+                    <li class="contact-info__item">
+                        <svg class="contact-info__icon">
+                            <use href="../assets/images/sprite.svg#icon-email"></use>
+                        </svg>
+                        <h3 class="contact-info__title">Our Email</h3>
+                        <a href="mailto:best@shop.com" class="contact-info__link">best@shop.com</a>
+                        <a href="mailto:info@bestshop.com" class="contact-info__link">info@bestshop.com</a>
+                    </li>
+                    <li class="contact-info__item">
+                        <svg class="contact-info__icon">
+                            <use href="../assets/images/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <h3 class="contact-info__title">Call Us</h3>
+                        <a href="tel:2681428413" class="contact-info__link">(268)142-8413 </a>
+                        <a href="tel:7602652917" class="contact-info__link">(760)265-2917</a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="feedback">
+            <div class="container feedback-wrapper">
+                <picture class="feedback__img">
+                    <source
+                        srcset="../assets/images/contact-us/webp/feedback@1x.webp 1x, ../assets/images/contact-us/webp/feedback@2x.webp 2x"
+                        type="image/webp">
+                    <source
+                        srcset="../assets/images/contact-us/feedback@1x.png 1x, ../assets/images/contact-us/feedback@2x.png 2x"
+                        type="image/png">
+
+                    <img src="../assets/images/contact-us/feedback@1x.png" alt="Decorative element" loading="lazy">
+                </picture>
+                <div class="contact-form__block">
+                    <h2 class="contact-form__title">Your Feedback Is Much Appreciated!</h2>
+                    <p class="contact-form__description">We will contact you when you complete the following form!</p>
+
+                    <form class="contact-form__body" action="/submit-feedback" method="POST">
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name <span class="required-star">*</span></label>
+                            <input type="text" id="name" name="user_name" class="form-input" required
+                                aria-required="true" placeholder=" ">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email Address <span
+                                    class="required-star">*</span></label>
+                            <input type="email" id="email" name="user_email" class="form-input" required
+                                aria-required="true" placeholder=" ">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic" class="form-label">Topic <span class="required-star">*</span></label>
+                            <input type="text" id="topic" name="topic" class="form-input" required aria-required="true"
+                                placeholder=" ">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message <span
+                                    class="required-star">*</span></label>
+                            <textarea id="message" name="user_message" class="form-input form-textarea" rows="6"
+                                required aria-required="true" placeholder=" "></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit-btn homepage-btn">
+                            SEND
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <div class="modal-backdrop is-hidden" data-modal>
+        <div class="modal">
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group form-group--modal">
+                    <label for="login-email" class="form-label form-label--modal">Email address <span
+                            class="required-star">*</span></label>
+                    <input type="email" id="login-email" name="email" class="form-input form-input--modal" required
+                        pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+                        title="Please enter a valid email address (e.g., yourname@example.com)">
+                </div>
+
+                <div class="form-group form-group--modal">
+                    <label for="login-password" class="form-label form-label--modal">Password <span
+                            class="required-star">*</span></label>
+                    <div class="password-wrapper">
+                        <input type="password" id="login-password" name="password" class="form-input form-input--modal"
+                            required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number.">
+                        <button type="button" class="password-toggle-btn" data-password-toggle>
+                            <svg class="eye-icon">
+                                <use href="/assets/images/sprite.svg#icon-eye"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember" class="checkbox-input">
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password-link">Forgot Your Password?</a>
+                </div>
+
+                <button type="submit" class="homepage-btn login-submit-btn">LOG IN</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="../js/layout.js" type="module"></script>
+    <script src="../js/contact.js"></script>
+
+</body>
+
+</html>
